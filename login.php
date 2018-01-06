@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require('connect.php');
 
 if (isset($_SESSION['username'])) header('Location: '.'index.php');
@@ -7,11 +8,15 @@ if (isset($_SESSION['username'])) header('Location: '.'index.php');
 if (isset($_POST['username']) and isset($_POST['password'])){
 
     $username = $_POST['username'];
+
     $password = $_POST['password'];
 
     $query = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
+
     $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+
     $count = mysqli_num_rows($result);
+
     if ($count == 1){
         $_SESSION['username'] = $username;
     }
@@ -24,11 +29,16 @@ if (isset($_POST['username']) and isset($_POST['password'])){
    }
 }
 if (isset($_SESSION['username'])){
+
     $username = $_SESSION['username'];
+
     header('Location: '.'index.php');
+
 }
+
+include('html/header.php');
+
 ?>
-<?include('html/header.php');?>
 <main>
     <div class="container">
         <div class="row loginu">
@@ -47,5 +57,7 @@ if (isset($_SESSION['username'])){
         </div>
     </div>
 </main>
-<?include('html/footer.php');?>
+<?
+include('html/footer.php');
+?>
 

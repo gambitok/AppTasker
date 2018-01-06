@@ -1,4 +1,6 @@
-<?include('html/header.php');?>
+<?
+include('html/header.php');
+?>
 <main>
     <div class="container">
         <div class="row contacts">
@@ -13,4 +15,6 @@
         </div>
     </div>
 </main>
-<?include('html/footer.php');?>
+<?
+include('html/footer.php');
+?>

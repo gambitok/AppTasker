@@ -15,10 +15,10 @@
             <div class="col-lg-1 logo">
                 <a href="index.php"><img src="img/logo.ico" alt="Logotype"></a>
             </div>
-            <div class="col-lg-offset-8 col-lg-2 create">
+            <div class="col-lg-offset-7 col-lg-2 create">
                 <a href="create.php">Create task</a>
             </div>
-            <div class="col-lg-1 login">
+            <div class="col-lg-2 login">
                 <? if (isset($_SESSION['username'])) { ?>
                     <a href="logout.php">Logout</a>
                 <?} else {?>

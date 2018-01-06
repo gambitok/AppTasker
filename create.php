@@ -1,5 +1,8 @@
-<?include('imagefunc.php');?>
-<?include('html/header.php');?>
+<?php
+include('Adding_Image.php');
+
+include('html/header.php');
+?>
 <main>
     <div class="container">
         <div class="row createtask">
@@ -22,4 +25,6 @@
         </div>
     </div>
 </main>
-<?include('html/footer.php');?>
+<?php
+include('html/footer.php');
+?>

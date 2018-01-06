@@ -1,8 +1,12 @@
 <?php
+
 session_start();
+
 require('connect.php');
+
+include('html/header.php');
+
 ?>
-<?include('html/header.php');?>
 <main>
     <div class="container">
         <div class="row red">
@@ -17,7 +21,10 @@ require('connect.php');
                         <li>Text:</li>
                         <li><textarea type="text" name="text"><?echo $_REQUEST['text'];?></textarea></li>
                         <li>Status:<input type=checkbox name="status"
-                                       <?if ($_REQUEST['status']){?>checked<?}?>></li>
+                                       <?php
+                                       if ($_REQUEST['status']){?>checked<?}
+                                       ?>
+                            ></li>
                         <li><input type="submit" value="Save&Update"></li>
                         <li><input type="hidden" name="id_task" value="<?echo $_REQUEST['id_task']?>"></li>
                     </ul>
@@ -26,4 +33,6 @@ require('connect.php');
         </div>
     </div>
 </main>
-<?include('html/footer.php');?>
+<?
+include('html/footer.php');
+?>
