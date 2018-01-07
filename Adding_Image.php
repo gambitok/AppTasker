@@ -148,12 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $imgname = resize($_FILES['picture'], $_POST['file_type'], $_POST['file_rotate']);
 
     // downloading file
-    if (!@copy($tmp_path . $imgname, $path . $imgname)) {
-        ?>
-        <script>
-            alert('Щось пішло не так!');
-        </script>
-        <?}
+    copy($tmp_path . $imgname, $path . $imgname);
 
     // deleting temporary file
     if (!empty($_FILES['picture']['name'])) unlink($tmp_path . $imgname);

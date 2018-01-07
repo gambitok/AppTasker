@@ -1,6 +1,6 @@
-<?php
+<?php 
 session_start();
-
+ 
 require('connect.php');
 
 require_once ('Zebra_Pagination.php');

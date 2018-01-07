@@ -1,7 +1,6 @@
-<?php
-include('Adding_Image.php');
-
+<?php 
 include('html/header.php');
+include('Adding_Image.php');
 ?>
 <main>
     <div class="container">
