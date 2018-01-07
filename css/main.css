@@ -15,15 +15,20 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #1b6d85;
-    width: 100%;
-}
-
-header a {
+a {
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+a:hover {
+    color: #2ca5d3;
+}
+
+
+header {
+    background-color: #1b6d85;
+    width: 100%;
 }
 
 header .logo {
@@ -38,14 +43,44 @@ header .logo img {
     height: 100%;
 }
 
-header .login, .create {
-    padding-top: 2.5%;
-    text-align: right;
+header .menu {
+    display: table;
+    height: 80px;
+}
+
+header .menu ul {
+    display: table-cell;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+header .menu li {
+    float: right;
+    list-style: none;
+    padding-left: 10%;
 }
 
 main {
     width: 100%;
     min-height: 450px;
+}
+
+main li {
+    font-size: 14pt;
+}
+
+main p {
+    padding-top: 2%;
+}
+
+main span {
+    font-weight: bold;
+}
+
+main a {
+    color: #1b6d85;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 main .red {
@@ -81,13 +116,10 @@ main .pagin {
 }
 
 main .task {
+    background-color: #9eb9c2;
     margin-bottom: 2%;
     padding: 2%;
     border: 1px solid #1b6d85;
-}
-
-main .task a{
-    color: #1b6d85;
 }
 
 main img {
@@ -96,7 +128,7 @@ main img {
     vertical-align: middle;
     max-width: 320px;
     max-height: 240px;
-    padding: 2%;
+    border: 1px solid #1b6d85;
 }
 
 main .createtask {
@@ -122,18 +154,12 @@ main .loginu li{
 footer {
     background-color: #1b6d85;
     display: table-row;
-    height: 100%;
+    height: 0%;
 }
 
 footer .info {
     padding-bottom: 3%;
     padding-top: 3%;
-}
-
-footer a {
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 footer .contact {

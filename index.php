@@ -77,20 +77,21 @@ include('html/header.php');
             <div class="col-lg-6">
                 <?php
                 if (isset($_SESSION['username']))
-                    echo "<a href='\\edit.php?id_task=$id_task&name=$name&email=$email&text=$text&status=$status'>Edit me</a>";?>
+                    echo "<a href='\\edit.php?id_task=$id_task&name=$name&email=$email&text=$text&status=$status'>Редагувати</a>";?>
 
-                <p><?php echo "Name: ".$row['name'].'<br>'; ?></p>
+                <p><span>Ім'я: </span><?php echo $row['name'].'<br>'; ?></p>
 
-                <p><?php echo "Email: ".$row['email'].'<br>'; ?></p>
+                <p><span>Email: </span><?php echo $row['email'].'<br>'; ?></p>
 
-                <p><?php echo "Text: ".$row['text'].'<br>'; ?></p>
+                <p><span>Текст завдання: </span><?php echo $row['text'].'<br>'; ?></p>
 
-                <p><?php
+                <p>
+                    <?php
 
-                    if (isset($_SESSION['username']))
-
-                    if ($row['status']) echo "Status: Read"; else echo "Status: Unread"
-
+                    if (isset($_SESSION['username'])) {
+                        ?><span>Статус: </span><?
+                        if ($row['status']) echo "Прочитано"; else echo "Не прочитано";
+                    }
                     ?>
                 </p>
             </div>

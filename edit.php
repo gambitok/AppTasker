@@ -14,18 +14,18 @@ include('html/header.php');
                 <form method="POST" action="change.php">
                     <h2>Редагування завдання</h2>
                     <ul>
-                        <li>Name:</li>
+                        <li>Ім'я: </li>
                         <li><input type="text" name="name" value="<?echo $_REQUEST['name'];?>"></li>
-                        <li>Email:</li>
+                        <li>Email: </li>
                         <li><input type="text" name="email" value="<?echo $_REQUEST['email'];?>"></li>
-                        <li>Text:</li>
+                        <li>Текст: </li>
                         <li><textarea type="text" name="text"><?echo $_REQUEST['text'];?></textarea></li>
-                        <li>Status:<input type=checkbox name="status"
+                        <li>Статус: <input type=checkbox name="status"
                                        <?php
                                        if ($_REQUEST['status']){?>checked<?}
                                        ?>
                             ></li>
-                        <li><input type="submit" value="Save&Update"></li>
+                        <li><input type="submit" value="Зберегти"></li>
                         <li><input type="hidden" name="id_task" value="<?echo $_REQUEST['id_task']?>"></li>
                     </ul>
                 </form>

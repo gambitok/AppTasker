@@ -19,15 +19,17 @@ session_start();
             <div class="col-lg-1 logo">
                 <a href="index.php"><img src="img/logo.ico" alt="Logotype"></a>
             </div>
-            <div class="col-lg-offset-7 col-lg-2 create">
-                <a href="create.php">Create task</a>
-            </div>
-            <div class="col-lg-2 login">
-                <? if (isset($_SESSION['username'])) { ?>
-                    <a href="logout.php">Logout</a>
-                <?} else {?>
-                    <a href="login.php">Log in</a>
-                <?}?>
+            <div class="col-lg-offset-7 col-lg-4 menu">
+                <ul>
+                    <li>
+                        <? if (isset($_SESSION['username'])) { ?>
+                            <a href="logout.php">Вийти</a>
+                        <?} else {?>
+                            <a href="login.php">Авторизація</a>
+                        <?}?>
+                    </li>
+                    <li><a href="create.php">Створити завдання</a></li>
+                </ul>
             </div>
         </div>
     </div>

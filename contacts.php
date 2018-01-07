@@ -7,9 +7,9 @@ include('html/header.php');
             <div class="col-lg-6">
                 <h2>Контакти</h2>
                 <ul>
-                    <li><p>+90289182982</p></li>
-                    <li><a>ads@gmail.com</a></li>
-                    <li><a>github.com</a></li>
+                    <li><a href="https://fb.com/dima.dzyubiy">Facebook</a></li>
+                    <li><a href="https://t.me/gambitok">Telegram</a></li>
+                    <li><a href="https://github.com/gambitok">Github</a></li>
                 </ul>
             </div>
         </div>
