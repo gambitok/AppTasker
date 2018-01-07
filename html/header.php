@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>AppTasker</title>
     <link rel="stylesheet" href="../css/layout.css" type="text/css">
-    <link rel="stylesheet" href="../css/ss.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/items.css" type="text/css">
     <link rel="stylesheet" href="../css/zebra_pagination.css" type="text/css">
     <script src="js/script.js"></script>
 </head>

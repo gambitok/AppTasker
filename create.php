@@ -16,8 +16,8 @@ include('html/header.php');
                         <li><input name="email" type="email"></li>
                         <li>Текст завдання:</li>
                         <li><textarea name="text"></textarea></li>
-                        <li><input type="button" value="Попередній перегляд" onclick="displayHTML(this.form)"></li>
                         <li><input type="file" name="picture"></li>
+                        <li><input type="button" value="Попередній перегляд" onclick="displayHTML(this.form)"></li>
                         <li><input type="submit" value="Додати"></li>
                     </ul>
                 </form>

@@ -44,9 +44,7 @@ include('html/header.php');
 <main>
     <div class="container">
         <div class="row sort">
-            <div class="col-lg-12">
                 <form method="POST">
-                    <span>Сортування</span>
                     <select name="category">
                         <option <?if ($_SESSION['cat']=='name'){?>selected<?}?>>name</option>
                         <option <?if ($_SESSION['cat']=='email'){?>selected<?}?>>email</option>
@@ -55,7 +53,6 @@ include('html/header.php');
                     </select>
                     <button>Фільтр</button>
                 </form>
-           </div>
         </div>
         <?php
 

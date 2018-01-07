@@ -156,6 +156,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         <?}
 
     // deleting temporary file
-    unlink($tmp_path . $imgname);
+    if (!empty($_FILES['picture']['name'])) unlink($tmp_path . $imgname);
 }
 ?>
