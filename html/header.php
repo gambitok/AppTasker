@@ -19,7 +19,12 @@ session_start();
             <div class="col-lg-1 logo">
                 <a href="index.php"><img src="img/logo.ico" alt="Logotype"></a>
             </div>
-            <div class="col-lg-offset-7 col-lg-4 menu">
+            <div class="col-lg-2 title">
+                <ul>
+                    <li><a href="index.php">AppTasker</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-offset-5 col-lg-4 menu">
                 <ul>
                     <li>
                         <? if (isset($_SESSION['username'])) { ?>

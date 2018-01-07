@@ -25,6 +25,9 @@ a:hover {
     color: #2ca5d3;
 }
 
+a, p, span, label, h1, h2, li {
+    font-family: Helvetica;
+}
 
 header {
     background-color: #1b6d85;
@@ -43,12 +46,12 @@ header .logo img {
     height: 100%;
 }
 
-header .menu {
+header .menu, .title {
     display: table;
     height: 80px;
 }
 
-header .menu ul {
+header .menu ul, .title ul {
     display: table-cell;
     vertical-align: middle;
     horiz-align: center;
@@ -57,7 +60,13 @@ header .menu ul {
 header .menu li {
     float: right;
     list-style: none;
-    padding-left: 10%;
+    padding-left: 8%;
+}
+header .title li {
+    float: left;
+    list-style: none;
+    font-size: 20pt;
+    font-weight: bold;
 }
 
 main {
@@ -132,8 +141,8 @@ main img {
 }
 
 main .createtask {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 main .createtask li{
@@ -142,8 +151,8 @@ main .createtask li{
 }
 
 main .loginu {
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 main .loginu li{
